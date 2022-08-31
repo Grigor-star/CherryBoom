@@ -1,0 +1,160 @@
+@media(max-width:768px){
+    
+    .header_inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hamburger {
+        display: block;
+        margin: 50px 0;
+        cursor: pointer;
+    }
+    
+    .nav_list {
+        margin: 20px;
+    }
+    
+    .nav_link {
+        font-size: 20px;
+        
+    }
+    
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 4px 0;
+        transition: .3s;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+     .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+     .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .nav_inner {
+        
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 0;
+        flex-direction: column;
+        background: #DFA870;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    
+    .nav_inner.active {
+        left: 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .card {
+        width: 50%;
+    }
+    
+    .copyright {
+        height: 150px;
+    }
+    
+    .copyright_inner {
+        font-size: 23px;
+    }
+    
+   
+}
+
+@media(max-width:465px){
+   
+    .hamburger {
+        margin: 15px 0;
+    }
+   
+    .nav_inner {
+        top: 60px;
+    }
+   
+    .intro {
+        height: 900px;
+    }
+   
+    .intro_inner {
+        padding: 100px 0;
+    }
+    
+    .cherry_1 {
+        display: none;
+    }
+   
+    .nav_inner {
+        
+    }
+   
+    .nav_logo {
+        font-size: 25px;
+        padding: 15px 0;
+    }
+    
+    .intro_title {
+        font-size: 50px;
+    }
+    
+    .btn-bg {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    
+    .titles {
+        font-size: 25px;
+    }
+    
+    .about_content{
+        font-size: 20px;
+        width: 330px;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    .card_title {
+        font-size: 25px;
+    }
+    
+    .card_price {
+        font-size: 20px;
+    }
+    
+    .card_btn {
+        font-size: 25px;
+    }
+    
+    .copyright {
+        height: 100px;
+    }
+    
+    .copyright_inner {
+        padding-top: 25px;
+        font-size: 15px;
+    }
+}
+
+@media(min-width:465px){
+    .cherry_2 {
+        display: none;
+    }
+}
+
